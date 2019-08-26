@@ -2,5 +2,14 @@
   "private": true,
   "workspaces": [
     "packages/*"
-  ]
+  ],
+  "devDependencies": {
+    "parcel": "^2.0.0-alpha.1.1"
+  },
+  "scripts": {
+    "dev": "parcel index.html"
+  },
+  "dependencies": {
+    "performance-now": "^2.1.0"
+  }
 }
