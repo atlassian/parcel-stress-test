@@ -1,10 +1,18 @@
 {
   "private": true,
+  "main": "dist/index.js",
   "workspaces": [
     "packages/*"
   ],
   "devDependencies": {
-    "parcel": "^2.0.0-alpha.1.1"
+    "@babel/core": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.6",
+    "core-js": "3",
+    "css-loader": "^3.2.0",
+    "mini-css-extract-plugin": "^0.8.0",
+    "webpack": "^4.39.3",
+    "webpack-cli": "^3.3.8"
   },
   "scripts": {
     "dev": "parcel index.html"
