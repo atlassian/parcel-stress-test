@@ -2,22 +2,24 @@
   "private": true,
   "main": "dist/index.js",
   "workspaces": [
-    "packages/*"
+    "app",
+    "webpack-config"
   ],
   "devDependencies": {
     "@babel/core": "^7.5.5",
     "@babel/preset-react": "^7.0.0",
-    "babel-loader": "^8.0.6",
-    "core-js": "3",
-    "css-loader": "^3.2.0",
-    "mini-css-extract-plugin": "^0.8.0",
-    "webpack": "^4.39.3",
-    "webpack-cli": "^3.3.8"
+    "core-js": "3"
   },
   "scripts": {
-    "dev": "parcel index.html"
+    "clean": "rm -rf ./dist ./app/.parcel-cache",
+    "parcel-dev": "parceldev watch app/index.js",
+    "parcel-build": "parceldev build app/index.js",
+    "webpack-dev": "webpack-dev",
+    "webpack-build": "webpack-build",
+    "postinstall": "node scripts/copy-editors.js"
   },
   "dependencies": {
+    "fs-extra": "^8.1.0",
     "performance-now": "^2.1.0"
   }
 }
