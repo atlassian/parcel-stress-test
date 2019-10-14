@@ -27,9 +27,9 @@ class AppContainer extends React.Component {
         </nav>
 
         <Route path="/editor-1" render={() => <Editor1 placeholder="editor" appearance="comment"/>} />
-        {/* <Route path="/editor-2" render={() => <Editor2 placeholder="editor" appearance="comment"/>} /> */}
-        {/* <Route path="/editor-3" render={() => <Editor3 placeholder="editor" appearance="comment"/>} /> */}
-        {/* <Route path="/editor-4" render={() => <Editor4 placeholder="editor" appearance="comment"/>} /> */}
+        {/* <Route path="/editor-2" render={() => <Editor2 placeholder="editor" appearance="comment"/>} />
+        <Route path="/editor-3" render={() => <Editor3 placeholder="editor" appearance="comment"/>} />
+        <Route path="/editor-4" render={() => <Editor4 placeholder="editor" appearance="comment"/>} /> */}
         {/* <Route path="/editor-5" render={() => <Editor5 placeholder="editor" appearance="comment"/>} /> */}
       </div>
     </Router>);

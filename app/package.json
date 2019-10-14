@@ -1,6 +1,7 @@
 {
   "name": "app",
   "version": "0.0.0",
+  "license": "Apache-2.0",
   "dependencies": {
     "@atlaskit/css-reset": "^5.0.2",
     "@babel/core": "^7.6.0",

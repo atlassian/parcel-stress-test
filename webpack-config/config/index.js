@@ -97,7 +97,7 @@ module.exports = async function createWebpackConfig(
               loader: 'babel-loader',
               options: {
                 babelrc: true,
-                rootMode: 'upward',
+                  presets: ['@babel/env', '@babel/react'],
                 envName: 'production:esm',
                 //cacheDirectory: path.resolve(baseCacheDir, 'babel'),
               },
